@@ -293,6 +293,7 @@ footer.site{border-top:1px solid var(--line);padding:48px 0;margin-top:40px}
   nav.links a:last-child{border-bottom:none}
   header.nav-open nav.links{grid-template-rows:1fr;opacity:1;pointer-events:auto}
   .value-grid{grid-template-columns:1fr}
+  #why-franchise .value-card.no-frame{display:none !important}
   .gallery{grid-template-columns:1fr}
   .gallery .tall{aspect-ratio:16/11}
   .proof-band{grid-template-columns:repeat(2,1fr)}
