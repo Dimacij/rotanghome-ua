@@ -151,6 +151,7 @@ header .btn{font-size:1.05rem}
 @media (max-width:760px){
   .hero-cover h1{color:var(--ink)}
   .hero-cover p.lead{color:var(--muted)}
+  #why-franchise{padding-top:32px}
 }
 
 /* Sections */
