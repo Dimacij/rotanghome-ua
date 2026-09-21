@@ -8,6 +8,7 @@
     header.classList.toggle('nav-open', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    toggle.textContent = open ? 'Закрыть' : 'Меню';
   }
 
   toggle.addEventListener('click', function () {
