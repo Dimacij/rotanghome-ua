@@ -126,7 +126,7 @@ header .btn{font-size:1.05rem}
    its own panel below, so nothing overlaps and nothing gets cropped. */
 @media (max-width:760px){
   .hero-cover{
-    height:auto;display:block;overflow:visible;background:var(--cream);
+    height:auto;display:block;overflow:visible;background:var(--cream);padding:0;
   }
   .hero-cover .cover-media{
     position:relative;inset:auto;width:100%;aspect-ratio:933/667;overflow:hidden;
@@ -151,7 +151,7 @@ header .btn{font-size:1.05rem}
 @media (max-width:760px){
   .hero-cover h1{color:var(--ink)}
   .hero-cover p.lead{color:var(--muted)}
-  #why-franchise{padding-top:32px}
+  #why-franchise{padding-top:0}
 }
 
 /* Sections */
