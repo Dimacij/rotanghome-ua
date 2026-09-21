@@ -54,7 +54,7 @@ header.site{
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
-.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.nav-wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:76px}
 .logo{font-family:'Petrona',serif;font-size:1.25rem;font-weight:600;letter-spacing:-0.01em;display:flex;align-items:center;gap:10px}
 .logo .mark{width:34px;height:34px;border-radius:50%;object-fit:cover;display:inline-block;border:1px solid var(--line)}
 nav.links{display:flex;gap:32px;align-items:center;font-size:1.05rem}
@@ -73,6 +73,21 @@ nav.links a.active{opacity:1;font-weight:700}
 .btn-outline{border:1.5px solid var(--espresso);color:var(--espresso)}
 .btn-outline:hover{background:var(--espresso);color:var(--cream)}
 header .btn{font-size:1.05rem}
+
+.nav-toggle{
+  display:none;
+  width:40px;height:40px;flex-shrink:0;
+  align-items:center;justify-content:center;
+  background:none;border:none;padding:0;cursor:pointer;
+}
+.nav-toggle span{
+  display:block;width:22px;height:2px;background:var(--ink);
+  transition:transform .2s ease, opacity .2s ease;
+}
+.nav-toggle span + span{margin-top:5px}
+header.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+header.nav-open .nav-toggle span:nth-child(2){opacity:0}
+header.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* Hero */
 .hero{position:relative;overflow:hidden}
@@ -272,7 +287,20 @@ footer.site{border-top:1px solid var(--line);padding:48px 0;margin-top:40px}
 
 @media (max-width: 860px){
   .hero-grid{grid-template-columns:1fr;padding:56px 0}
-  nav.links{display:none}
+  .nav-toggle{display:flex}
+  nav.links{
+    position:absolute;top:100%;left:0;right:0;margin-top:1px;
+    display:flex;flex-direction:column;
+    background:var(--cream);
+    border:1px solid var(--line);border-top:none;
+    border-radius:0 0 16px 16px;
+    box-shadow:0 20px 40px -24px rgba(36,27,20,0.35);
+    max-height:0;overflow:hidden;opacity:0;pointer-events:none;
+    transition:max-height .25s ease, opacity .2s ease;
+  }
+  nav.links a{padding:14px 24px;border-bottom:1px solid var(--line)}
+  nav.links a:last-child{border-bottom:none}
+  header.nav-open nav.links{max-height:320px;opacity:1;pointer-events:auto}
   .value-grid{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
   .gallery .tall{aspect-ratio:16/11}

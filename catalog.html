@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=50">
+<link rel="stylesheet" href="css/style.css?v=62">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
       <img class="mark" src="assets/photos/logo-bamboo.jpg" alt="Логотип ROTANG HOME">
       ROTANG HOME
     </a>
-    <nav class="links">
+    <nav class="links" id="site-nav">
       <a href="index.html">Главная</a>
       <a href="franchise.html">Франшиза</a>
       <a class="active" href="catalog.html">Каталог</a>
@@ -27,6 +27,9 @@
     <a class="btn btn-primary" href="https://wa.me/380679388393" target="_blank" rel="noopener">
       <span class="full">Связаться в WhatsApp</span><span class="short">WhatsApp</span>
     </a>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -294,5 +297,6 @@
   </div>
 </footer>
 
+<script src="js/nav.js?v=1" defer></script>
 </body>
 </html>
