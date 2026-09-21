@@ -104,7 +104,10 @@ header .btn{font-size:1.05rem}
 }
 .hero-badge img{width:42px;height:42px;border-radius:50%;object-fit:cover;display:block}
 .hero-badge span{font-family:'Petrona',serif;font-weight:600;letter-spacing:0.04em;color:#fff;font-size:1.15rem}
-@media (max-width:640px){.hero-visual{height:auto;aspect-ratio:900/595}}
+@media (max-width:640px){
+  .hero-visual{height:auto;aspect-ratio:1/1}
+  .hero-visual .cover-img{object-position:100% center}
+}
 
 /* Cover hero (full-bleed) */
 .hero-cover{
