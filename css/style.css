@@ -290,17 +290,21 @@ footer.site{border-top:1px solid var(--line);padding:48px 0;margin-top:40px}
   .nav-toggle{display:flex}
   nav.links{
     position:absolute;top:100%;left:0;right:0;margin-top:1px;
-    display:flex;flex-direction:column;
+    display:grid;grid-template-rows:0fr;
     background:var(--cream);
     border:1px solid var(--line);border-top:none;
     border-radius:0 0 16px 16px;
     box-shadow:0 20px 40px -24px rgba(36,27,20,0.35);
-    max-height:0;overflow:hidden;opacity:0;pointer-events:none;
-    transition:max-height .25s ease, opacity .2s ease;
+    opacity:0;pointer-events:none;
+    transition:grid-template-rows .25s ease, opacity .2s ease;
+  }
+  nav.links .links-inner{
+    display:flex;flex-direction:column;
+    overflow:hidden;min-height:0;
   }
   nav.links a{padding:14px 24px;border-bottom:1px solid var(--line)}
   nav.links a:last-child{border-bottom:none}
-  header.nav-open nav.links{max-height:320px;opacity:1;pointer-events:auto}
+  header.nav-open nav.links{grid-template-rows:1fr;opacity:1;pointer-events:auto}
   .value-grid{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
   .gallery .tall{aspect-ratio:16/11}
