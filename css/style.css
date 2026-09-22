@@ -172,6 +172,10 @@ section{padding:96px 0}
 .value-card h3{font-size:1.15rem}
 .value-card p{margin-top:10px;color:var(--muted);font-size:0.98rem;line-height:1.6;font-weight:600}
 @media (max-width:1000px){.value-grid{grid-template-columns:repeat(2,1fr)}}
+#why-franchise .value-grid{display:flex;flex-wrap:wrap;justify-content:center}
+#why-franchise .value-card{flex:0 1 calc(25% - 15px)}
+@media (max-width:1000px){#why-franchise .value-card{flex-basis:calc(50% - 10px)}}
+@media (max-width:860px){#why-franchise .value-card{flex-basis:100%}}
 .value-card.no-frame{background:transparent;box-shadow:none;padding:36px 0;gap:0}
 .value-card.no-frame h3,
 .value-card.no-frame p{
