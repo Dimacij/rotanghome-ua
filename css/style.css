@@ -57,7 +57,7 @@ header.site{
 .nav-wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:76px}
 .logo{font-family:'Petrona',serif;font-size:1.25rem;font-weight:600;letter-spacing:-0.01em;display:flex;align-items:center;gap:10px}
 .logo .mark{width:34px;height:34px;border-radius:50%;object-fit:cover;display:inline-block;border:1px solid var(--line)}
-nav.links{display:flex;gap:32px;align-items:center;font-size:1.05rem}
+nav.links{display:flex;gap:48px;align-items:center;font-size:1.05rem}
 nav.links a{opacity:1;color:var(--ink);font-weight:600;transition:opacity .2s}
 nav.links a:hover{opacity:0.75}
 nav.links a.active{opacity:1;font-weight:700}
