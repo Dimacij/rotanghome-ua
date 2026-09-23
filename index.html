@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=98">
+<link rel="stylesheet" href="css/style.css?v=99">
 </head>
 <body>
 
@@ -43,9 +43,22 @@
       <h2>Материал с характером: гибкий, живой, настоящий</h2>
       <p>Ротанг — гибкая пальмовая лоза, которая плетётся вручную и держит форму десятилетиями.<br> Это дерево без единого гвоздя и синтетики: только природная текстура, воздух и свет в интерьере.</p>
     </div>
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/ZYXs0ZkXxX4?start=3" title="ROTANG HOME — видео" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-embed" id="promo-video" role="button" tabindex="0" aria-label="Воспроизвести видео о ROTANG HOME">
+      <img src="assets/photos/lifestyle-livingroom.jpg" alt="Видео о мебели ROTANG HOME" loading="lazy">
+      <span class="video-play"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
+    <script>
+      (function(){
+        var wrap = document.getElementById('promo-video');
+        function play(){
+          wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/ZYXs0ZkXxX4?start=3&autoplay=1" title="ROTANG HOME — видео" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+        }
+        wrap.addEventListener('click', play, {once:true});
+        wrap.addEventListener('keydown', function(e){
+          if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); play(); }
+        }, {once:true});
+      })();
+    </script>
     <div class="value-grid">
       <div class="value-card">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-2 3-2 6 0 9s2 6 0 9M6 6c1.5 2 1.5 4 0 6s-1.5 4 0 6M18 6c-1.5 2-1.5 4 0 6s1.5 4 0 6"/></svg>
