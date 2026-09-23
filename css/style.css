@@ -120,7 +120,7 @@ header .btn{font-size:1.05rem}
     linear-gradient(90deg, rgba(15,10,7,0.35) 0%, rgba(15,10,7,0.05) 55%);
 }
 .hero-cover .cover-content{
-  position:relative;z-index:2;width:100%;color:#fff;
+  position:relative;z-index:2;width:100%;color:#fff;margin-bottom:60px;
 }
 /* Below ~740px tall/narrow viewports, overlaying text on the photo squeezes the
    image into a thin strip. Stack instead: full uncropped photo on top, text on
