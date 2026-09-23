@@ -120,7 +120,7 @@ header .btn{font-size:1.05rem}
     linear-gradient(90deg, rgba(15,10,7,0.35) 0%, rgba(15,10,7,0.05) 55%);
 }
 .hero-cover .cover-content{
-  position:relative;z-index:2;width:100%;color:#fff;text-align:center;
+  position:relative;z-index:2;width:100%;color:#fff;
 }
 /* Below ~740px tall/narrow viewports, overlaying text on the photo squeezes the
    image into a thin strip. Stack instead: full uncropped photo on top, text on
@@ -143,7 +143,7 @@ header .btn{font-size:1.05rem}
   .hero-cover p.lead{max-width:none}
 }
 .hero-cover .eyebrow{color:var(--sand)}
-.hero-cover h1{color:#fff;font-size:clamp(1.5rem,2.7vw,2.2rem);line-height:1.15;max-width:18ch;margin:0 auto}
+.hero-cover h1{color:#fff;font-size:clamp(1.5rem,2.7vw,2.2rem);line-height:1.15;max-width:18ch}
 .hero-cover p.lead{color:rgba(255,255,255,0.92);max-width:46ch;font-size:1.12rem;line-height:1.6;margin-top:22px}
 .hero-cover .credit{position:absolute;z-index:2;bottom:20px;right:24px;font-size:0.8rem;color:rgba(255,255,255,0.78);text-shadow:0 1px 3px rgba(20,14,9,0.6)}
 .hero-cover .stat-row{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap}
