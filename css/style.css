@@ -127,7 +127,7 @@ header .btn{font-size:1.05rem}
    its own panel below, so nothing overlaps and nothing gets cropped. */
 @media (max-width:760px){
   .hero-cover{
-    height:auto;display:block;overflow:visible;background:var(--cream);padding:0;
+    height:auto;min-height:0;display:block;overflow:visible;background:var(--cream);padding:0;
   }
   .hero-cover .cover-media{
     position:relative;inset:auto;width:100%;aspect-ratio:933/667;overflow:hidden;
@@ -137,7 +137,7 @@ header .btn{font-size:1.05rem}
     background:linear-gradient(180deg, rgba(20,14,9,0) 60%, rgba(15,10,7,0.55) 100%);
   }
   .hero-cover .cover-content{
-    padding:32px 20px 40px;background:var(--cream);
+    padding:32px 20px 40px;background:var(--cream);margin-bottom:0;
   }
   .hero-cover h1{max-width:none}
   .hero-cover p.lead{max-width:none}
