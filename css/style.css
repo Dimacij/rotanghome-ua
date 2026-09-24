@@ -184,8 +184,8 @@ section{padding:96px 0}
 .video-play svg{width:19px;height:19px;margin-left:3px}
 .video-embed:hover .video-play{transform:translate(-50%,-50%) scale(1.08);background:#3D4D3F}
 @media (min-width:641px){
-  .video-embed{aspect-ratio:1/0.92}
-  .video-embed img{object-position:center 68%}
+  .video-embed{aspect-ratio:1/0.8}
+  .video-embed img{object-position:center 80%}
 }
 @media (max-width:640px){
   .video-embed{aspect-ratio:4/5;width:92%;margin:32px auto}
