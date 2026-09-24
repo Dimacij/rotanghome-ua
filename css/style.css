@@ -269,7 +269,7 @@ section{padding:96px 0}
 .contact-item .s{color:var(--muted);font-size:1rem;margin-top:3px;line-height:1.5}
 .contact-item .s a{color:var(--sage-dark);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
 .contact-item .s a:hover{border-color:var(--sage-dark)}
-.contact-item .s.wallet{font-family:'Work Sans',monospace;font-size:0.92rem;word-break:break-all;user-select:all}
+.contact-item .s.wallet{font-family:'Work Sans',monospace;font-size:0.92rem;font-weight:700;color:var(--ink);word-break:break-all;user-select:all}
 .messenger-links a{color:var(--sage-dark);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
 .messenger-links a:hover{border-color:var(--sage-dark)}
 
