@@ -269,7 +269,7 @@ section{padding:96px 0}
 .contact-item .s{color:var(--muted);font-size:1rem;margin-top:3px;line-height:1.5}
 .contact-item .s a{color:var(--sage-dark);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
 .contact-item .s a:hover{border-color:var(--sage-dark)}
-.wallet-copy{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:2px 0;margin-top:3px;font-family:'Work Sans',monospace;font-size:0.92rem;font-weight:700;color:var(--ink);word-break:break-all;text-align:left;line-height:1.5;cursor:pointer;position:relative}
+.wallet-copy{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:2px 0;margin-top:3px;font-family:'Work Sans',monospace;font-size:0.82rem;font-weight:400;color:#0d0d0d;word-break:break-all;text-align:left;line-height:1.5;cursor:pointer;position:relative}
 .wallet-copy-icon{width:16px;height:16px;flex-shrink:0;color:var(--sage-dark);transition:color .2s,transform .2s}
 .wallet-copy:hover .wallet-copy-icon{color:var(--sage)}
 .wallet-copy:active .wallet-copy-icon{transform:scale(0.9)}
