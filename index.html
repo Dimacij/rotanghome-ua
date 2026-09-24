@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=113">
+<link rel="stylesheet" href="css/style.css?v=114">
 </head>
 <body>
 
@@ -160,9 +160,39 @@
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="14" rx="3"/><path d="M2 10h20"/><circle cx="17" cy="15" r="1.5"/></svg>
           <div>
             <div class="t">Оплата за франшизу в USDT(TRC20):</div>
-            <div class="s wallet">TWMMjq1FXLYZAq1EHg5FPUWYd5q7DNVRe5</div>
+            <button type="button" class="s wallet-copy" data-wallet="TWMMjq1FXLYZAq1EHg5FPUWYd5q7DNVRe5">
+              <span class="wallet-copy-text">TWMMjq1FXLYZAq1EHg5FPUWYd5q7DNVRe5</span>
+              <svg class="wallet-copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            </button>
           </div>
         </div>
+        <script>
+          (function(){
+            var btn = document.querySelector('.wallet-copy');
+            if(!btn) return;
+            btn.addEventListener('click', function(){
+              var text = btn.getAttribute('data-wallet');
+              function done(){
+                btn.classList.add('copied');
+                setTimeout(function(){ btn.classList.remove('copied'); }, 1800);
+              }
+              if(navigator.clipboard && navigator.clipboard.writeText){
+                navigator.clipboard.writeText(text).then(done).catch(function(){
+                  fallbackCopy(text); done();
+                });
+              } else {
+                fallbackCopy(text); done();
+              }
+              function fallbackCopy(t){
+                var ta = document.createElement('textarea');
+                ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0';
+                document.body.appendChild(ta); ta.select();
+                try { document.execCommand('copy'); } catch(e) {}
+                document.body.removeChild(ta);
+              }
+            });
+          })();
+        </script>
       </div>
     </div>
   </div>
